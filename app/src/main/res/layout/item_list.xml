@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#ff5a5a5a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:background="#fffff5fc">
+
+
+    <!-- DETALHES DA IMAGEM E SUAS CURTIDAS -->
+        <RelativeLayout
+            android:id="@+id/layout_imag"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/imagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    />
+
+        </RelativeLayout>
+
+        <!-- DETALHES DA IMAGEM E SUAS CURTIDAS -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentTop="true"
+                    android:text="A historia dessa imagem ..."
+                    android:textColor="#ff343434"
+                    android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="50dp"
+                android:layout_below="@+id/descricao"
+                android:text="Data : 00/00/2000"
+                android:textColor="#ff343434"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp">
+
+
+        <TextView
+            android:id="@+id/txtCurti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Curtiu "
+            android:textColor="#ff343434"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txtCurti"
+            android:text="amigos"
+            android:textColor="#ff4a4a4a"
+            android:textSize="25sp" />
+        <!-- DETALHES DA IMAGEM E SUAS CURTIDAS -->
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout >
